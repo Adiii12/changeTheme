@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.top-tab {
+  display: flex;
+  background-color: #f6f5f7;
+}
+/* Style the tab */
+.top-tab .tab {
+  float: left;
+  transition: 0.4s;
+  background-color: #ffffff;
+  width: 20%;
+  position: relative;
+  height: 100vh;
+  padding-right: 7px;
+}
+.top-tab .tab.navSlide {
+  width: 5%;
+  padding-right: 0px;
+}
+.top-tab .tab.navSlide .tablinks:hover h3 {
+  display: block;
+  position: absolute;
+  background-color: #324ccb;
+  left: 100%;
+  color: #fff;
+  padding: 15px 15px;
+}
+.top-tab .tab.navSlide .tablinks h3 {
+  display: none;
+}
+.top-tab .tab.navSlide .logout .logout_user h4 {
+  display: none;
+}
+.top-tab .tab.navSlide .logout .logout_user:hover h4 {
+  display: block;
+  position: absolute;
+  background-color: #324ccb;
+  left: 103%;
+  color: #fff;
+  padding: 15px 15px;
+}
+.top-tab .tab.navSlide .profile img {
+  width: 40px;
+  height: 40px;
+}
+.top-tab .tab.navSlide .count {
+  right: -5px;
+  top: 0px;
+  padding: 2px;
+}
+.top-tab .tab.navSlide .profile h4 {
+  display: none;
+}
+.top-tab .tab .bar {
+  position: absolute;
+  left: 100%;
+  background-color: #fff;
+  top: 20px;
+  cursor: pointer;
+  background-color: #324ccb;
+  color: #fff;
+  border-radius: 0px 30px 30px 0px;
+  padding: 10px;
+}
+
+.top-tab .tab .profile img {
+  width: 80px;
+  border: 4px solid #f6f5f7;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+}
+.top-tab .tab .profile h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style the .tablinkss inside the tab */
+.top-tab .tab .tablinks {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  color: black;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  border-radius: 0px 30px 30px 0px;
+  /* font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 550;
+  position: relative;
+}
+.top-tab .tab .tablinks h3 {
+  font-size: 15px;
+}
+.top-tab .tab .fa-th-large,
+.fa-envelope,
+.fa-chart-bar,
+.fa-wallet,
+.fa-cog {
+  padding: 7px;
+  border-radius: 50%;
+}
+.top-tab .tab .count {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+}
+.top-tab .tab span {
+  margin-right: 15px;
+}
+/* Change background color of .tablinkss on hover */
+.top-tab .tab .tablinks:hover {
+  background-color: #b5c1fc;
+}
+.top-tab .tab .tablinks:hover .fa-th-large {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks:hover .fa-envelope {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks:hover .fa-chart-bar {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks:hover .fa-wallet {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks:hover .fa-cog {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+/* Create an active/current "tab .tablinks" class */
+.top-tab .tab .tablinks.active {
+  background-color: #324ccb;
+  color: #fff;
+}
+.top-tab .tab .tablinks.active .fa-th-large {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks.active .fa-envelope {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks.active .fa-chart-bar {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks.active .fa-wallet {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .tablinks.active .fa-cog {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+.top-tab .tab .logout {
+  width: 96%;
+  position: absolute;
+  bottom: 10px;
+  height: 120px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  margin: 0px 2% 0px 2%;
+  background-color: #324ccb;
+  color: #fff;
+  cursor: pointer;
+}
+.top-tab .tab .logout .logout_user {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 7px;
+}
+.top-tab .tab .logout .logout_user:hover {
+  padding: 7px;
+  background-color: #90a0f8;
+  /* border-radius: 50%; */
+  /* color: yellow; */
+}
+.top-tab .tab .logout .logout_user:hover .fas {
+  background-color: #324ccb;
+}
+.top-tab .tab .logout .logout_user .fas {
+  padding: 7px;
+  background-color: #90a0f8;
+  border-radius: 50%;
+  color: yellow;
+}
+/* Style the tab content */
+.top-tab .tabcontent {
+  float: left;
+  padding: 0px 15px;
+  /* border: 1px solid #ccc; */
+  width: 100%;
+}
+.top-tab .admin_nav {
+  width: 100%;
+  transition: 0.4s;
+  padding: 0px 20px;
+}
+.top-tab .admin_nav.navSlide1 {
+  width: 100%;
+  margin-left: 0;
+}

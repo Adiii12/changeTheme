@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <section class="top-tab" id="top-tab">
+      <div class="tab" id="tab">
+        <span class="bar" onclick="menuAnimation()"
+          ><i class="fas fa-bars"></i
+        ></span>
+        <div class="profile">
+          <img src="images/aDII.jpg" alt="" />
+          <h4>Muhammad Adil Khan</h4>
+        </div>
+        <div
+          class="tablinks"
+          onclick="openTab(event, 'Dashboard')"
+          id="defaultOpen"
+        >
+          <span><i class="fas fa-th-large"></i></span>
+          <h3>Dashboard</h3>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'Messages')">
+          <span>
+            <i class="fas fa-envelope"></i>
+          </span>
+          <h3>Messages</h3>
+
+          <span class="count">02</span>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'Analytics')">
+          <span><i class="far fa-chart-bar"></i></span>
+          <h3>Analytics</h3>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'billing')">
+          <span><i class="fas fa-wallet"></i></span>
+          <h3>Billing</h3>
+        </div>
+        <div class="tablinks" onclick="openTab(event, 'setting')">
+          <span><i class="fas fa-cog"></i></span>
+          <h3>Setting</h3>
+        </div>
+        <div class="logout">
+          <div class="logout_user">
+            <span>
+              <i class="fas fa-sign-out-alt"></i>
+            </span>
+            <h4>Logout</h4>
+          </div>
+          <div class="logout_user">
+            <span>
+              <i class="fas fa-user"></i>
+            </span>
+            <h4>Profile</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin_nav" id="admin_nav">
+        <div id="Dashboard" class="tabcontent">
+          <h3>Dashboard</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+            veritatis officiis eligendi facere fugit! Ratione inventore
+            explicabo eius quibusdam quam atque odio ipsam cupiditate vero, enim
+            numquam cum omnis debitis?
+          </p>
+        </div>
+
+        <div id="Messages" class="tabcontent">
+          <h3>Messages</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            officiis error ab veritatis consequatur atque itaque molestiae
+            labore eos, dolorum harum tempora iure consectetur nemo natus iste
+            quod aliquam ratione!
+          </p>
+        </div>
+
+        <div id="Analytics" class="tabcontent">
+          <h3>Analytics</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            laudantium sint saepe ullam ut expedita animi assumenda, dolor illum
+            sed harum. Nobis veritatis accusantium deserunt nam aut repudiandae
+            officia non.
+          </p>
+        </div>
+        <div id="billing" class="tabcontent">
+          <h3>Billing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            laudantium sint saepe ullam ut expedita animi assumenda, dolor illum
+            sed harum. Nobis veritatis accusantium deserunt nam aut repudiandae
+            officia non.
+          </p>
+        </div>
+        <div id="setting" class="tabcontent">
+          <h3>setting</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            laudantium sint saepe ullam ut expedita animi assumenda, dolor illum
+            sed harum. Nobis veritatis accusantium deserunt nam aut repudiandae
+            officia non.
+          </p>
+        </div>
+      </div>
+      <section class="changes_color" id="changes_color">
+        <span class="show_color" onclick="changeColor()">
+          <i class="fas fa-cog"></i>
+        </span>
+        <div class="color_area">
+          <h3>Change Theme</h3>
+          <div class="sidebar">
+            <div class="darkMode" onclick="darkMode()"></div>
+            <div class="light" onclick="lightMode()"></div>
+            <div class="blueColor" onclick="blueMode()"></div>
+          </div>
+        </div>
+        <button class="defaultColor" onclick="defaultMode()">
+          Default Theme
+        </button>
+      </section>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>

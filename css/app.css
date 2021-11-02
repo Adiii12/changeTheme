@@ -1,0 +1,171 @@
+.top-tab .changes_color {
+  position: fixed;
+  height: 100vh;
+  right: -250px;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 250px;
+  z-index: 10;
+  transition: 0.4s;
+  padding: 25px 10px;
+}
+.top-tab .changes_color .defaultColor {
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.top-tab .changes_color .show_color {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 100%;
+  color: #fff;
+  background-color: #324ccb;
+  padding: 7px;
+  border-radius: 30px 0px 0px 30px;
+}
+.top-tab .changes_color .color_area {
+  margin-top: 30px;
+}
+.top-tab .changes_color .color_area h3 {
+  margin: 20px 0px;
+}
+.top-tab .changes_color .color_area .sidebar {
+  display: flex;
+  justify-content: space-between;
+}
+.top-tab .changes_color .color_area .sidebar .darkMode {
+  width: 40px;
+  height: 40px;
+  background-color: #191e3a;
+  cursor: pointer;
+}
+.top-tab .changes_color .color_area .sidebar .blueColor {
+  width: 40px;
+  height: 40px;
+  background-color: #1937ca;
+  cursor: pointer;
+}
+
+.top-tab .changes_color .color_area .sidebar .light {
+  width: 40px;
+  height: 40px;
+  background-color: #e0f0ef;
+  cursor: pointer;
+}
+.top-tab .changes_color.navChange {
+  right: 0px;
+}
+/* Dark mode ================ */
+.top-tab .tab.changeColor {
+  background-color: #191e3a;
+}
+.top-tab .tab.changeColor .bar {
+  background-color: #191e3a;
+}
+.top-tab.changeColor {
+  background-color: #060817;
+}
+.top-tab.changeColor .admin_nav {
+  color: #fff;
+}
+.top-tab.changeColor .profile h4 {
+  color: #fff;
+}
+.top-tab .tab.changeColor .tablinks h3 {
+  color: #fff;
+}
+.top-tab .tab.changeColor .tablinks .fas,
+.far {
+  color: #fff;
+}
+
+/* blue mode ===================== */
+
+.top-tab .changes_color.navBlue {
+  margin-right: 0px;
+}
+.top-tab .tab.navBlue {
+  background-color: #1937ca;
+}
+.top-tab .tab.navBlue .bar {
+  background-color: #1937ca;
+}
+.top-tab.navBlue {
+  background-color: #f6f5f7;
+}
+.top-tab.navBlue .admin_nav {
+  color: #000;
+}
+.top-tab .tab.navBlue .profile h4 {
+  color: #fff;
+}
+.top-tab .tab.navBlue .tablinks h3 {
+  color: #fff;
+}
+.top-tab .tab.navBlue .tablinks .fas,
+.far {
+  color: #fff;
+}
+.top-tab .tab.navBlue .tablinks:hover {
+  color: #fff;
+  background-color: #1937ca;
+}
+.top-tab .tab.navBlue .tablinks.active {
+  color: #fff;
+  background-color: #b5c1fc;
+}
+
+/* light mode ====================== */
+.top-tab .tab.lightColor {
+  background-color: #e0f0ef;
+}
+.top-tab .tab.lightColor .bar {
+  background-color: #e0f0ef;
+}
+.top-tab.lightColor {
+  background-color: #f1f2f3;
+}
+.top-tab.lightColor .admin_nav {
+  color: #000;
+}
+
+.top-tab .tab.lightColor .profile h4 {
+  color: #ffff;
+}
+.top-tab .tab.lightColor .tablinks {
+  background-color: #c9e2e0;
+  margin: 10px 0px;
+}
+.top-tab .tab.lightColor .tablinks h3 {
+  color: #009688;
+}
+.top-tab .tab.lightColor .tablinks .fas,
+.far {
+  color: #fff;
+}
+.top-tab .tab.lightColor .tablinks:hover {
+  color: #fff;
+}
+.top-tab .tab.lightColor .tablinks:hover h3 {
+  color: #fff;
+  background-color: #009688;
+}
+
+.top-tab .tab.lightColor .tablinks.active {
+  color: #fff;
+  background-color: #009688;
+}
+.top-tab .tab.lightColor .tablinks.active h3 {
+  color: #fff;
+}
+.top-tab .tab.lightColor .logout {
+  background-color: #c9e2e0;
+}
+.top-tab .tab.lightColor .logout .logout_user:hover {
+  color: #fff;
+  background-color: #009688;
+}
